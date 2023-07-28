@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+
+.bg{
+    background-image:url("/static/img/fundo.jpg");
+    background-size: cover;
+}
+
+.mainmenu {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* deixa o menu no centro*/
+}  /* centralizando */
+
+.mainmenu a{
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 70px;
+    margin-top: 80px;
+    width: 500px;
+    text-decoration: none;
+}
+
+.mainmenu ul {
+    list-style: none;   /* tira pontinho preto do lado */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-image:url("/static/img/baralho.jpeg");
+    background-size: cover;
+}
+/*.mainmenu ul li a {
+    padding: 10px 9px;
+}   */
+
+a {
+    color: #F0EADD;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #30728C;
+    transition: 0.3s;
+    width: 300px;
+    color: #F0EADD;
+    border-radius: 50px;
+}  /* link clicavel */
+
+footer {
+    margin-bottom: 70px;
+    margin-top: 80px;
+    width: 250px;
+}
+
+img{
+    background-color: #6C5A9F;
+    left: 857px;
+    position: relative;
+    top: 3px;
+    max-width: 190px;
+    border-radius: 50%;
+    height: auto;
+}
+.apresentacao p{
+    background-color: #30728C;
+    color: #F0EADD;
+    height: 70px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif !important;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom:30px;
+}
+
+
+.nome{
+    background-size: cover;
+    width: 100%;
+    font-size: 24px;
+    color: #F0EADD;
+    top: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif !important;
+}
+
+@media only screen and (max-width: 375px) {
+  /* Coloque os estilos específicos para esses dispositivos aqui */
+
+  img {
+    max-width: 120px; /* Diminui o tamanho da imagem para 120px */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Garante que a imagem seja tratada como bloco */
+  }
+}
+@media only screen and (max-width: 414px) {
+
+.mainmenu a {
+    font-size: 24px; /* Aumente o tamanho da fonte para melhorar a legibilidade */
+    margin-bottom: 20px;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%; /* Ocupar toda a largura disponível */
+  }
+.apresentacao p {
+    width: 100%;
+    height:88px;
+    max-width: 300px; /* Ajuste a largura máxima do texto de apresentação */
+    font-size: 14px;
+  }
+img {
+    left:10px;
+    max-width: 150px; /* Diminui o tamanho da imagem para 150px */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Garante que a imagem seja tratada como bloco */
+}
+.nome {
+    font-size: 20px;
+  }
+ footer {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
+
+
+
+
+
